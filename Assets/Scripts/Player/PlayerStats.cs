@@ -116,6 +116,8 @@ public class PlayerStats : MonoBehaviour
     }
     #endregion
 
+    public ParticleSystem damageEffect;
+
     [Header("Experience/Level")]
     public int experience = 0;
     public int level = 1;
@@ -147,9 +149,6 @@ public class PlayerStats : MonoBehaviour
     public Image expBar;
     public TMP_Text levelText;
 
-    public GameObject secondWeaponTest;
-    public GameObject firstPassiveItemTest, secondPassiveItemTest;
-
     void Awake()
     {
         characterData = CharacterSelector.GetData();
@@ -166,9 +165,6 @@ public class PlayerStats : MonoBehaviour
 
 
         SpawnWeapon(characterData.StartingWeapon);
-        //SpawnWeapon(secondWeaponTest);
-        //SpawnPassiveItem(firstPassiveItemTest);
-        SpawnPassiveItem(secondPassiveItemTest);
     }
 
     void Start()
@@ -249,6 +245,11 @@ public class PlayerStats : MonoBehaviour
         if(!isInvincible)
         {
             CurrentHealth -= dmg;
+
+            if(damageEffect)
+            {
+                Instantiate(damageEffect, transform.position, Quaternion.identity);
+            }
 
             invincibilityTimer = invincibilityDuration;
             isInvincible = true;
