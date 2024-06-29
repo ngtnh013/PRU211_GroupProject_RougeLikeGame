@@ -4379,7 +4379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755b334cb91693e4297ff77152b16860, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageEffect: {fileID: 0}
+  damageEffect: {fileID: 9095877881779583350, guid: 20711ebb4f033b2418fc675e1b9b6ade, type: 3}
   experience: 0
   level: 1
   experienceCap: 0
@@ -4508,6 +4508,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   previousState: 0
+  damageTextCanvas: {fileID: 1843193742}
+  textFontSize: 20
+  textFont: {fileID: 11400000, guid: 00ea3c8c37839b6489e7b1dedaecf003, type: 2}
+  referenceCamera: {fileID: 0}
   pauseScreen: {fileID: 1063074359}
   resultsScreen: {fileID: 64040680}
   levelUpScreen: {fileID: 1960284141}
@@ -10318,7 +10322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6115674430742028627, guid: 05445d0f5e79b234b9b0f1ce945b0293, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2.98
       objectReference: {fileID: 0}
     - target: {fileID: 6115674430742028627, guid: 05445d0f5e79b234b9b0f1ce945b0293, type: 3}
       propertyPath: m_LocalPosition.y
