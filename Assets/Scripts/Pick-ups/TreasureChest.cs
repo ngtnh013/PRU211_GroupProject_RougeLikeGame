@@ -4,31 +4,34 @@ using UnityEngine;
 
 public class TreasureChest : MonoBehaviour
 {
-    InventoryManager inventory;
-
-    private void Start()
-    {
-        inventory = FindObjectOfType<InventoryManager>();
-    }
-
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.CompareTag("Player"))
+        PlayerInventory p = col.GetComponent<PlayerInventory>();
+        if (p)
         {
-            OpenTreasureChest();
+            bool randomBool = Random.Range(0, 2) == 0;
+
+            OpenTreasureChest(p, randomBool);
+
             Destroy(gameObject);
         }
     }
 
-    public void OpenTreasureChest()
+    public void OpenTreasureChest(PlayerInventory inventory, bool isHigherTier)
     {
-        if (inventory.GetPossibleEvolutions().Count <= 0)
+        foreach (PlayerInventory.Slot s in inventory.weaponSlots)
         {
-            Debug.LogWarning("No Available Evolutions");
-            return;
+            Weapon w = s.item as Weapon;
+            if (w.data.evolutionData == null) continue;
+            
+            foreach (ItemData.Evolution e in w.data.evolutionData)
+            {
+                if (e.condition == ItemData.Evolution.Condition.treasureChest)
+                {
+                    bool attempt = w.AttemptEvolution(e, 0);
+                    if (attempt) return;
+                }
+            }
         }
-
-        WeaponEvolutionBlueprint toEvolve = inventory.GetPossibleEvolutions()[Random.Range(0, inventory.GetPossibleEvolutions().Count)];
-        inventory.EvolveWeapon(toEvolve);
     }
 }

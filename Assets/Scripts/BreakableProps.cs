@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BreakableDrops : MonoBehaviour
+public class BreakableProps : MonoBehaviour
 {
     public float health;
 
