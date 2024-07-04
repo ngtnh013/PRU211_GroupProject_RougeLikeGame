@@ -299,7 +299,8 @@ public class PlayerInventory : MonoBehaviour
                         {
                             if (chosenWeaponUpgrade.maxLevel <= w.currentLevel)
                             {
-                                isLevelUp = false;
+                                DisableUpgradeUI(upgradeOption);
+                                isLevelUp = true;
                                 break;
                             }
 
@@ -339,7 +340,8 @@ public class PlayerInventory : MonoBehaviour
                         {
                             if (chosenPassiveUpgrade.maxLevel <= p.currentLevel)
                             {
-                                isLevelUp = false;
+                                DisableUpgradeUI(upgradeOption);
+                                isLevelUp = true;
                                 break;
                             }
 

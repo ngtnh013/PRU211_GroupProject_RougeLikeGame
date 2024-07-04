@@ -19,12 +19,14 @@ public class AuraWeapon : Weapon
             currentAura = Instantiate(currentStats.auraPrefab, transform);
             currentAura.weapon = this;
             currentAura.owner = owner;
+            currentAura.transform.localScale = new Vector3(currentStats.area, currentStats.area, currentStats.area);
         }
     }
 
     public override void OnUnequip()
     {
-        if (currentAura) Destroy(currentAura);
+        if (currentAura) 
+            Destroy(currentAura);
     }
 
     public override bool DoLevelUp()
