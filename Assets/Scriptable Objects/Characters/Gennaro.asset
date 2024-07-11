@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31daf5e4e2f511f41b02f1e8e4106ba9, type: 3}
   m_Name: Gennaro
   m_EditorClassIdentifier: 
-  icon: {fileID: 1609436241, guid: 1abf67e241a875a489fec27f27e758d3, type: 3}
+  icon: {fileID: -1602034816, guid: 1abf67e241a875a489fec27f27e758d3, type: 3}
   name: Gennaro
   startingWeapon: {fileID: 11400000, guid: e8153e2ac92113c41903e4823b8acd2b, type: 2}
   stats:
@@ -21,4 +21,4 @@ MonoBehaviour:
     moveSpeed: 5
     might: 1
     speed: 1
-    magnet: 1.6
+    magnet: 1.8

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31daf5e4e2f511f41b02f1e8e4106ba9, type: 3}
-  m_Name: Poe
+  m_Name: Lama
   m_EditorClassIdentifier: 
   icon: {fileID: -1602034816, guid: 1abf67e241a875a489fec27f27e758d3, type: 3}
-  name: Poe
-  startingWeapon: {fileID: 11400000, guid: 58f1bb5357a6dc441bcfc98133c0cfa3, type: 2}
+  name: Lama
+  startingWeapon: {fileID: 0}
   stats:
     maxHealth: 1000
     recovery: 0

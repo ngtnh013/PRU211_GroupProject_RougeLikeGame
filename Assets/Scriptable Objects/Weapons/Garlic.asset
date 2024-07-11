@@ -14,7 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 268440627, guid: 6a8b414291ec2b442bb677fffe0f76ac, type: 3}
   maxLevel: 5
-  evolutionData: []
+  evolutionData:
+  - name: Soul Eater
+    condition: 1
+    consumes: 2
+    evolutionLevel: 2
+    catalysts:
+    - itemType: {fileID: 11400000, guid: e429ece99da483b41936a980f98f25ce, type: 2}
+      level: 2
+    outcome:
+      itemType: {fileID: 11400000, guid: 57af516dca36ab64c928bd4830d2562f, type: 2}
+      level: 1
   behaviour: AuraWeapon
   baseStats:
     name: Garlic
