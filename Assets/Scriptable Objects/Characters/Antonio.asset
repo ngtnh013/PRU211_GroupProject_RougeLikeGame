@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Antonio
   m_EditorClassIdentifier: 
   icon: {fileID: -1602034816, guid: 1abf67e241a875a489fec27f27e758d3, type: 3}
+  controller: {fileID: 9100000, guid: b538732bb3cd0f5428a430cc580f1725, type: 2}
   name: Antonio
   startingWeapon: {fileID: 11400000, guid: ae2e6ba1cc7d26146ac7dc8f0d9f3bd1, type: 2}
   stats:

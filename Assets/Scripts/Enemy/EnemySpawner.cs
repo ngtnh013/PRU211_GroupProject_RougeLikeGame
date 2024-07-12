@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
 
+[System.Obsolete("Replaced by the Spawn Manager.")]
 public class EnemySpawner : MonoBehaviour
 {
     [System.Serializable]

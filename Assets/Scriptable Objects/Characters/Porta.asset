@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Porta
   m_EditorClassIdentifier: 
   icon: {fileID: -1602034816, guid: 1abf67e241a875a489fec27f27e758d3, type: 3}
+  controller: {fileID: 9100000, guid: b538732bb3cd0f5428a430cc580f1725, type: 2}
   name: Porta
   startingWeapon: {fileID: 11400000, guid: d8d588f2c9730d442a26c1b68d32f078, type: 2}
   stats:

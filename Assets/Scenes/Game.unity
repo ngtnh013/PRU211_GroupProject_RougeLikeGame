@@ -2896,7 +2896,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 380753780}
-  - component: {fileID: 380753779}
+  - component: {fileID: 380753781}
   m_Layer: 0
   m_Name: Enemy Spawner
   m_TagString: Untagged
@@ -2904,47 +2904,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &380753779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 380753778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5335f5d39df08a045848b02500f66483, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waves:
-  - waveName: Wave 1
-    enemyGroups:
-    - enemyName: Bat
-      enemyCount: 5
-      spawnCount: 0
-      enemyPrefab: {fileID: 6709624868870020201, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
-    waveQuota: 0
-    spawnInterval: 1
-    spawnCount: 0
-  currentWaveCount: 0
-  enemiesAlive: 0
-  maxEnemiesAllowed: 4
-  maxEnemiesReached: 0
-  waveInterval: 3
-  relativeSpawnPoints:
-  - {fileID: 1384586613}
-  - {fileID: 1494944338}
-  - {fileID: 839831596}
-  - {fileID: 159236742}
-  - {fileID: 1880056590}
-  - {fileID: 942303898}
-  - {fileID: 253135835}
-  - {fileID: 258923710}
-  - {fileID: 2071360371}
-  - {fileID: 450210779}
-  - {fileID: 1821220533}
-  - {fileID: 768287982}
-  - {fileID: 198001132}
 --- !u!4 &380753780
 Transform:
   m_ObjectHideFlags: 0
@@ -2973,6 +2932,24 @@ Transform:
   - {fileID: 198001132}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &380753781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380753778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed1a028fc88767428a451245fe447b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+  - {fileID: 11400000, guid: c3e8288f775ec42468fded817476d0cb, type: 2}
+  - {fileID: 11400000, guid: 75d600df890d3764ca3935aedd9f6431, type: 2}
+  - {fileID: 11400000, guid: 578f1efa4c73d35489c5709e51f489b4, type: 2}
+  referenceCamera: {fileID: 519420031}
+  maximumEnemyCount: 300
 --- !u!1 &384962629
 GameObject:
   m_ObjectHideFlags: 0

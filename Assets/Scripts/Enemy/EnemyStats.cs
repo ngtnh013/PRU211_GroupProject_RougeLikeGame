@@ -1,21 +1,15 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
 public class EnemyStats : MonoBehaviour
 {
-    public EnemyScriptableObject enemyData;
 
     //Current stats
-    [HideInInspector]
     public float currentMoveSpeed;
-    [HideInInspector]
     public float currentHealth;
-    [HideInInspector]
     public float currentDamage;
 
-    public float despawnDistance = 20f;
     Transform player;
 
     [Header("Damage Feedback")]
@@ -26,11 +20,12 @@ public class EnemyStats : MonoBehaviour
     SpriteRenderer sr;
     EnemyMovement movement;
 
+    public static int count;
+
     void Awake()
     {
-        currentMoveSpeed = enemyData.MoveSpeed;
-        currentHealth = enemyData.MaxHealth;
-        currentDamage = enemyData.Damage;
+        count++;
+
     }
 
     private void Start()
@@ -42,13 +37,7 @@ public class EnemyStats : MonoBehaviour
         movement = GetComponent<EnemyMovement>();
     }
 
-    private void Update()
-    {
-        if(Vector2.Distance(transform.position, player.position) >= despawnDistance)
-        {
-            ReturnEnemy();
-        }
-    }
+    
 
     public void TakeDamage(float dmg, Vector2 sourcePosition, float knockbackForce = 5f, float knockbackDuration = 0.2f)
     {
@@ -81,6 +70,9 @@ public class EnemyStats : MonoBehaviour
 
     public void Kill()
     {
+        DropRateManager drops = GetComponent<DropRateManager>();
+        if (drops) drops.active = true;
+
         StartCoroutine(KillFade());
     }
 
@@ -111,13 +103,7 @@ public class EnemyStats : MonoBehaviour
 
     private void OnDestroy()
     {
-        EnemySpawner es = FindObjectOfType<EnemySpawner>();
-        es.OnEnemyKilled();
+        count--;
     }
 
-    void ReturnEnemy()
-    {
-        EnemySpawner es = FindObjectOfType<EnemySpawner>();
-        transform.position = player.position + es.relativeSpawnPoints[Random.Range(0, es.relativeSpawnPoints.Count)].position;
-    }
 }

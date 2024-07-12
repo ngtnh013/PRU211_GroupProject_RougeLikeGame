@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Gennaro
   m_EditorClassIdentifier: 
   icon: {fileID: -1602034816, guid: 1abf67e241a875a489fec27f27e758d3, type: 3}
+  controller: {fileID: 9100000, guid: b538732bb3cd0f5428a430cc580f1725, type: 2}
   name: Gennaro
   startingWeapon: {fileID: 11400000, guid: e8153e2ac92113c41903e4823b8acd2b, type: 2}
   stats:
