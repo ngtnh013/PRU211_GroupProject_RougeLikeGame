@@ -43,8 +43,6 @@ public class GameManager : MonoBehaviour
     public TMP_Text chosenCharacterName;
     public TMP_Text levelReachedDisplay;
     public TMP_Text timeSurvivedDisplay;
-    public List<Image> chosenWeaponsUI = new List<Image>(6);
-    public List<Image> chosenPassiveItemsUI = new List<Image>(6);
 
     [Header("Stopwatch")]
     public float timeLimit;
@@ -207,41 +205,6 @@ public class GameManager : MonoBehaviour
     public void AssignLevelReachedUI(int levelReachedData)
     {
         levelReachedDisplay.text = levelReachedData.ToString();
-    }
-
-    public void AssignChosenWeaponsAndPassiveItemsUI(List<PlayerInventory.Slot> chosenWeaponsData, List<PlayerInventory.Slot> chosenPassiveItemsData)
-    {
-        if(chosenWeaponsData.Count != chosenWeaponsUI.Count || chosenPassiveItemsData.Count != chosenPassiveItemsUI.Count)
-        {
-            Debug.Log("Chosen waepons and passive items data lists have different lengths");
-            return;
-        }
-
-        for(int i=0; i< chosenWeaponsUI.Count; i++)
-        {
-            if (chosenWeaponsData[i].image.sprite)
-            {
-                chosenWeaponsUI[i].enabled = true;
-                chosenWeaponsUI[i].sprite = chosenWeaponsData[i].image.sprite;
-            }
-            else
-            {
-                chosenWeaponsUI[i].enabled = false;
-            }
-        }
-
-        for (int i = 0; i < chosenPassiveItemsUI.Count; i++)
-        {
-            if (chosenPassiveItemsData[i].image.sprite)
-            {
-                chosenPassiveItemsUI[i].enabled = true;
-                chosenPassiveItemsUI[i].sprite = chosenPassiveItemsData[i].image.sprite;
-            }
-            else
-            {
-                chosenPassiveItemsUI[i].enabled = false;
-            }
-        }
     }
 
     void UpdateStopwatch()
