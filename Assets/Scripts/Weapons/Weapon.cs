@@ -56,32 +56,21 @@ public abstract class Weapon : Item
 
     public virtual void Initialise(WeaponData data)
     {
+        print(name + "Initialised");
         base.Initialise(data);
         this.data = data;
         currentStats = data.baseStats;
         movement = GetComponentInParent<PlayerMovement>();
-        currentCooldown = currentStats.cooldown;
+        ActiveCooldown();
     }
 
-    protected virtual void Awake()
-    {
-        if(data) currentStats = data.baseStats;
-    }
-
-    protected virtual void Start()
-    {
-        if(data)
-        {
-            Initialise(data);
-        }
-    }
 
     protected virtual void Update()
     {
         currentCooldown -= Time.deltaTime;
         if(currentCooldown <= 0f)
         {
-            Attack(currentStats.number);
+            Attack(currentStats.number + owner.Stats.amount);
         }
     }
 
@@ -108,7 +97,7 @@ public abstract class Weapon : Item
     {
         if(CanAttack())
         {
-            currentCooldown += currentStats.cooldown;
+            ActiveCooldown();
             return true;
         }
         return false;
@@ -116,8 +105,23 @@ public abstract class Weapon : Item
 
     public virtual float GetDamage()
     {
-        return currentStats.GetDamage() * owner.CurrentMight;
+        return currentStats.GetDamage() * owner.Stats.might;
+    }
+
+    public virtual float GetArea()
+    {
+        return currentStats.area + owner.Stats.area;
     }
 
     public virtual Stats GetStats() { return currentStats; }
+
+    public virtual bool ActiveCooldown(bool strict = false)
+    {
+        if (strict && currentCooldown > 0) return false;
+
+        float actualCooldown = currentStats.cooldown * Owner.Stats.cooldown;
+
+        currentCooldown = Mathf.Min(actualCooldown, currentCooldown + actualCooldown);
+        return true;
+    }
 }

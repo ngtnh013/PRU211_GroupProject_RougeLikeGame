@@ -11,7 +11,7 @@ public class LightningRingWeapon : ProjectileWeapon
         if (!currentStats.projectilePrefab)
         {
             Debug.LogWarning(string.Format("Projectile prefab has not been set for {0}", name));
-            currentCooldown = data.baseStats.cooldown;
+            ActiveCooldown(true);
             return false;
         }
 
@@ -20,14 +20,14 @@ public class LightningRingWeapon : ProjectileWeapon
         if (currentCooldown <= 0)
         {
             allSelectedEnemies = new List<EnemyStats>(FindObjectsOfType<EnemyStats>());
-            currentCooldown += currentStats.cooldown;
+            ActiveCooldown();
             currentAttackCount = attackCount;
         }
 
         EnemyStats target = PickEnemy();
         if (target)
         {
-            DamageArea(target.transform.position, currentStats.area, GetDamage());
+            DamageArea(target.transform.position, GetArea(), GetDamage());
 
             Instantiate(currentStats.hitEffect, target.transform.position, Quaternion.identity);
         }

@@ -160,9 +160,9 @@ public class PlayerInventory : MonoBehaviour
         {
             GameObject go = new GameObject(data.baseStats.name + " Controller");
             Weapon spawnedWeapon = (Weapon)go.AddComponent(weaponType);
-            spawnedWeapon.Initialise(data);
             spawnedWeapon.transform.SetParent(transform);
             spawnedWeapon.transform.localPosition = Vector2.zero;
+            spawnedWeapon.Initialise(data);
             spawnedWeapon.OnEquip();
 
             weaponSlots[slotNum].Assign(spawnedWeapon);
