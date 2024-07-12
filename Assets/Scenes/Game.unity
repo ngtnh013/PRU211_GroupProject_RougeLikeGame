@@ -4414,7 +4414,7 @@ MonoBehaviour:
     magnet: 0
     revival: 0
   damageEffect: {fileID: 9095877881779583350, guid: 20711ebb4f033b2418fc675e1b9b6ade, type: 3}
-  blockedEffect: {fileID: 0}
+  blockedEffect: {fileID: 6355558920905405197, guid: 3e0b181fec283e142b49f7e919756df7, type: 3}
   experience: 0
   level: 1
   experienceCap: 0
@@ -6500,7 +6500,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Max Health
+  m_text: 'Health
+
+    Max Health
 
     Recovery
 
@@ -6559,7 +6561,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12.5
+  m_fontSize: 11.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7264,6 +7266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 793468758}
+  displayCurrentHealth: 1
   updateInEditor: 1
 --- !u!114 &1464347244
 MonoBehaviour:
@@ -7761,6 +7764,8 @@ MonoBehaviour:
 
     0
 
+    0
+
     --100%
 
     --100%
@@ -7814,7 +7819,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12.5
+  m_fontSize: 11.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
