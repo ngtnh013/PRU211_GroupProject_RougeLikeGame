@@ -74,6 +74,8 @@ public class PlayerStats : MonoBehaviour
     public Image expBar;
     public TMP_Text levelText;
 
+    PlayerAnimator playerAnimator;
+
     void Awake()
     {
         characterData = CharacterSelector.GetData();
@@ -87,6 +89,9 @@ public class PlayerStats : MonoBehaviour
         baseStats = actualStats = characterData.stats;
         collector.SetRadius(actualStats.magnet);
         health = actualStats.maxHealth;
+
+        playerAnimator = GetComponent<PlayerAnimator>();
+        playerAnimator.SetAnimatorController(characterData.controller);
     }
 
     void Start()
