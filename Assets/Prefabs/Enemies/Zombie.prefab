@@ -181,8 +181,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentMoveSpeed: 0.7
-  currentHealth: 0
-  currentDamage: 0
+  currentHealth: 30
+  currentDamage: 4
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   damageFlashDuration: 0.2
   deathFadeTime: 0.6
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a4560179e0a85949bd62bf0a7152ebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   drops:
   - name: Blue Gem
     itemPrefab: {fileID: 6466409195788405340, guid: dde242c120162164291fcbc80f0e24cd, type: 3}

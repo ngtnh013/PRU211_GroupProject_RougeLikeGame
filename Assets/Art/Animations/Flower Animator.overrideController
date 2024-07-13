@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Flower Animator
+  m_Controller: {fileID: 9100000, guid: 586f599505043194a81a960d4769800d, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 27163e97fdeae3144be44761f26077b9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 169b9bb85a68adc45a4b440ad3a4cf86, type: 2}

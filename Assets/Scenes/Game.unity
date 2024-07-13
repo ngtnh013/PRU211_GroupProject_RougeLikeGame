@@ -2897,6 +2897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 380753780}
   - component: {fileID: 380753781}
+  - component: {fileID: 380753782}
   m_Layer: 0
   m_Name: Enemy Spawner
   m_TagString: Untagged
@@ -2950,6 +2951,23 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 578f1efa4c73d35489c5709e51f489b4, type: 2}
   referenceCamera: {fileID: 519420031}
   maximumEnemyCount: 300
+--- !u!114 &380753782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380753778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55226ebb79c5b704d9e345d748c794fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events:
+  - {fileID: 11400000, guid: 0d7a04d601a87f44eaf1818fffece3e4, type: 2}
+  - {fileID: 11400000, guid: ef5521cd0a9726b41a77ceba7031ccf5, type: 2}
+  firstTriggerDelay: 60
+  triggerInterval: 10
 --- !u!1 &384962629
 GameObject:
   m_ObjectHideFlags: 0

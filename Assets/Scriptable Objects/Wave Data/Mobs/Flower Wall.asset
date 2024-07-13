@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281157bcf55a7c94399255d0733beec2, type: 3}
+  m_Name: Flower Wall
+  m_EditorClassIdentifier: 
+  possibleSpawnPrefabs:
+  - {fileID: 1696578272276380143, guid: a2ce51af23c4e6b438d07af23dc942fa, type: 3}
+  spawnInterval: {x: 2, y: 3}
+  spawnsPerTick: {x: 40, y: 50}
+  duration: 1
+  probability: 1
+  luckFactor: 1
+  activeAfter: 0
+  spawnEffectPrefab: {fileID: 4097133651568240074, guid: 643ab96139fc67149867a0f73ad6b1d8, type: 3}
+  scale: {x: 1, y: 1}
+  spawnRadius: 10
+  lifepan: 15
