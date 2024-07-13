@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Bat Wave 1
   m_EditorClassIdentifier: 
   possibleSpawnPrefabs:
-  - {fileID: 6709624868870020201, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
-  - {fileID: 6709624868870020201, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
-  - {fileID: 6709624868870020201, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
-  - {fileID: 6709624868870020201, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
+  - {fileID: 55201829266097529, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+  - {fileID: 55201829266097529, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+  - {fileID: 55201829266097529, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+  - {fileID: 2654658406974217994, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
   spawnInterval: {x: 1, y: 2}
   spawnsPerTick: {x: 4, y: 5}
   duration: 60

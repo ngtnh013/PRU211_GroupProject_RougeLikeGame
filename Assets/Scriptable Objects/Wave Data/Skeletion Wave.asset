@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Skeletion Wave
   m_EditorClassIdentifier: 
   possibleSpawnPrefabs:
-  - {fileID: 3153727965146289032, guid: df8f186e32e5ca94eb7ea4e0b33e9ca3, type: 3}
+  - {fileID: 7272896874101538988, guid: df8f186e32e5ca94eb7ea4e0b33e9ca3, type: 3}
   spawnInterval: {x: 1.5, y: 2.5}
   spawnsPerTick: {x: 3, y: 4}
   duration: 60

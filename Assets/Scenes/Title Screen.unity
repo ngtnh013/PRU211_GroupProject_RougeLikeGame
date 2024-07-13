@@ -130,6 +130,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1048885650}
     m_Modifications:
+    - target: {fileID: 1366093030866495247, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366093030866495247, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657408980566581727, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6709624868870020201, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
       propertyPath: m_Name
       value: Red Bat (1)
@@ -174,6 +186,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8677273317241740872, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -1527203406163029453, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
     - {fileID: 6078479238339755473, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
@@ -184,7 +200,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
 --- !u!4 &166944080 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 7968062331751337436, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1366093030866495247, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
   m_PrefabInstance: {fileID: 166944079}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &198938316
@@ -421,6 +437,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1048885650}
     m_Modifications:
+    - target: {fileID: 1725075117152552174, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725075117152552174, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 2428983631863635826, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3728231163410883238, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6709624868870020201, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
       propertyPath: m_Name
       value: Bat (1)
@@ -475,7 +507,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
 --- !u!4 &459177545 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 7968062331751337436, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1725075117152552174, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
   m_PrefabInstance: {fileID: 459177544}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &515952243
@@ -863,7 +895,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 713b9775c305f034b9feefa9226110bb, type: 3}
 --- !u!4 &649025634 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8947293974554707858, guid: 713b9775c305f034b9feefa9226110bb, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8210074135869655934, guid: 713b9775c305f034b9feefa9226110bb, type: 3}
   m_PrefabInstance: {fileID: 649025633}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &750360744
@@ -1142,6 +1174,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1048885650}
     m_Modifications:
+    - target: {fileID: 1725075117152552174, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725075117152552174, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 2428983631863635826, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3728231163410883238, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6709624868870020201, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
       propertyPath: m_Name
       value: Bat
@@ -1196,7 +1244,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
 --- !u!4 &926488115 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 7968062331751337436, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1725075117152552174, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
   m_PrefabInstance: {fileID: 926488114}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &959956595
@@ -1531,6 +1579,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1048885650}
     m_Modifications:
+    - target: {fileID: 1366093030866495247, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366093030866495247, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657408980566581727, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6709624868870020201, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
       propertyPath: m_Name
       value: Red Bat
@@ -1575,6 +1635,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8677273317241740872, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -1527203406163029453, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
     - {fileID: 6078479238339755473, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
@@ -1585,7 +1649,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
 --- !u!4 &1130862450 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 7968062331751337436, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1366093030866495247, guid: 3d37a034b168c104daf4cb1fa0558c4f, type: 3}
   m_PrefabInstance: {fileID: 1130862449}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1163334581
@@ -2052,6 +2116,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1048885650}
     m_Modifications:
+    - target: {fileID: 1725075117152552174, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725075117152552174, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2428983631863635826, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3728231163410883238, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6709624868870020201, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
       propertyPath: m_Name
       value: Bat (2)
@@ -2106,7 +2186,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
 --- !u!4 &1979990726 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 7968062331751337436, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1725075117152552174, guid: 75eb8bd3f1113d446834946f1f9fc11b, type: 3}
   m_PrefabInstance: {fileID: 1979990725}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2093924074

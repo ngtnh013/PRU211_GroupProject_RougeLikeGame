@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Zombie Wave
   m_EditorClassIdentifier: 
   possibleSpawnPrefabs:
-  - {fileID: 7280215599586981638, guid: 1420257cc5bebb142a9d539e0a1e8c29, type: 3}
+  - {fileID: 3927859317384167231, guid: 1420257cc5bebb142a9d539e0a1e8c29, type: 3}
   spawnInterval: {x: 2, y: 3}
   spawnsPerTick: {x: 8, y: 10}
   duration: 60

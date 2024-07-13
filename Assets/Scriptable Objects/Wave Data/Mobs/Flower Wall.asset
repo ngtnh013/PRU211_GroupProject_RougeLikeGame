@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Flower Wall
   m_EditorClassIdentifier: 
   possibleSpawnPrefabs:
-  - {fileID: 1696578272276380143, guid: a2ce51af23c4e6b438d07af23dc942fa, type: 3}
+  - {fileID: 5862140092291596367, guid: a2ce51af23c4e6b438d07af23dc942fa, type: 3}
   spawnInterval: {x: 2, y: 3}
   spawnsPerTick: {x: 40, y: 50}
   duration: 1

@@ -43,8 +43,12 @@ public class CharacterSelector : MonoBehaviour
                     }
                 }
             }
-            if (characters.Count > 0) return characters[Random.Range(0, characters.Count)];
-            #endif
+
+            if (characters.Count > 0)
+            {
+                return characters[Random.Range(0, characters.Count)];
+            }
+#endif
         }
         return null;
     }

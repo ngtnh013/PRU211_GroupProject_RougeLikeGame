@@ -8,9 +8,9 @@ public class LightningRingWeapon : ProjectileWeapon
 
     protected override bool Attack(int attackCount = 1)
     {
-        if (!currentStats.projectilePrefab)
+        if (!currentStats.hitEffect)
         {
-            Debug.LogWarning(string.Format("Projectile prefab has not been set for {0}", name));
+            Debug.LogWarning(string.Format("Hit effect prefab has not been set for {0}", name));
             ActiveCooldown(true);
             return false;
         }
